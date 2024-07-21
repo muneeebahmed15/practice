@@ -13,7 +13,7 @@ const App = () => {
   const getData = async() =>{
     setLoading(true);
     try {
-      const {data} = await axios.get(`http://localhost:3000/api/get-stocks/${score}`);
+      const {data} = await axios.get(`https://practice-backend-wheat.vercel.app/api/get-stocks/${score}`);
       console.log(data.data);
 
       setData(data.data)
