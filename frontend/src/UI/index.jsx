@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bar = ({score, name, color1, color2}) => {
   return (
-    <div className='mt-2 flex justify-between items-center'>
+    <div className='mt-2 flex justify-between drop-shadow-md items-center'>
         <span>{name}</span>
 
         <div className={`border-2 rounded-lg w-[60%]`} style={{borderColor:color1}}>

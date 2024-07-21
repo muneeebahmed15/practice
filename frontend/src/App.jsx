@@ -32,9 +32,9 @@ const App = () => {
   // console.log(score);
 
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center h-screen bg-slate-300'>
    
-    <div className='bg-[#efebe9] border-2 border-[#4e342e] fixed z-10 top-44 w-1/2 md:w-1/4 rounded-xl p-5'>
+    <div className='bg-slate-300 border-2 drop-shadow-2xl border-[#4e342e] fixed z-10 top-44 w-1/2 md:w-1/4 rounded-xl p-5'>
       <span className='pl-1 font-bold'>Risk Score: {score}</span>
     <Slider defaultValue={score} step={1} max={10} onChange={value => setScore(value)}/>
     </div>
@@ -71,27 +71,27 @@ const App = () => {
 
 <div className='grid grid-cols-3 fixed bottom-20 gap-5 justify-items-center'>
 
-{data?.foreignBonds === 0 && <div className='flex justify-between border-2 border-[#b71c1c] p-1 rounded-md items-center w-40'>
+{data?.foreignBonds === 0 && <div className='flex drop-shadow-md justify-between border-2 border-[#b71c1c] p-1 rounded-md items-center w-40'>
   <span>Foreign Bonds</span>
   <span>{data?.foreignBonds}</span>
 </div>}
 
-{data?.commodities === 0 && <div className='flex justify-between border-2 border-[#fbc02d] p-1 rounded-md items-center w-40'>
+{data?.commodities === 0 && <div className='flex drop-shadow-md justify-between border-2 border-[#fbc02d] p-1 rounded-md items-center w-40'>
   <span>Commodities</span>
   <span>{data?.commodities}</span>
 </div>}
 
-{data?.realEstate === 0 && <div className='flex justify-between border-2 border-[#424242] p-1 rounded-md items-center w-40'>
+{data?.realEstate === 0 && <div className='flex drop-shadow-md justify-between border-2 border-[#424242] p-1 rounded-md items-center w-40'>
   <span>Real Estate</span>
   <span>{data?.realEstate}</span>
 </div>}
 
-{data?.tBills === 0 && <div className='flex justify-between border-2 border-[#1a237e] p-1 rounded-md items-center w-40'>
+{data?.tBills === 0 && <div className='flex drop-shadow-md justify-between border-2 border-[#1a237e] p-1 rounded-md items-center w-40'>
   <span>T-Bills</span>
   <span>{data?.tBills}</span>
 </div>}
 
-{data?.alternative === 0 && <div className='flex justify-between border-2 border-[#9e9d24] p-1 rounded-md items-center w-40'>
+{data?.alternative === 0 && <div className='flex drop-shadow-md justify-between border-2 border-[#9e9d24] p-1 rounded-md items-center w-40'>
   <span>Alternative</span>
   <span>{data?.alternative}</span>
 </div>}

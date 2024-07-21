@@ -21,10 +21,6 @@ const addStocks = async(req, res) => {
 const getStocks = async (req,res) =>{
     const {id} = req.params;
 
-    // console.log(id)
-
-
-    // console.log(req.params)
 
     try {
         const data = await test.findOne({riskScore: id});
