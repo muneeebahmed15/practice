@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-slider .ant-slider-track{
+    background-color: #4e342e;
+}
+
+.ant-slider .ant-slider-track:hover{
+    background-color: #de7e4f !important;
+}
+
+.ant-slider .ant-slider-handle::after{
+    box-shadow: #4e342e;
+}
+
+.ant-slider .ant-slider-handle:hover::after {
+    box-shadow: 0 0 0 2px #de7e4f; /* Change the box-shadow color on hover */
+}
